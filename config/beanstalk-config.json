@@ -1,0 +1,10 @@
+{
+  "appName" : "test-app",
+  "appDescription" : "An app for testing AWS Code Pipeline",
+  "sourceBundle": {
+    "s3Bucket" : "",
+    "s3Key" : ""
+  },
+  "initialVersion" : "v1.0.0",
+  "envName" : "production"
+}

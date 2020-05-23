@@ -1,0 +1,22 @@
+{
+  "name": "aws-beanstalk-create",
+  "version": "1.0.0",
+  "description": "Create an aws beanstalk environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "generateBuildSpec": "ts-node src/generateBuildSpec.ts"
+  },
+  "author": "codeandrewg@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.681.0",
+    "dotenv": "^8.2.0",
+    "uuidv4": "^6.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}

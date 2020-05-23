@@ -1,0 +1,19 @@
+version: 0.2
+
+phases: 
+    install:
+        runtime-versions:
+            nodejs: 10
+        commands:
+            - npm install
+    pre_build:
+        commands:
+            - echo "Generating docs"
+            - npm run generate-docs
+            - echo "Generating swagger..."
+            - npm run generate-swagger
+    post_build:
+        commands:
+            - echo "we are in the post build phase"
+            - aws s3 cp swagger.json s3://[bucket-name]
+            - aws s3 cp docs s3://[bucket-name]/docs --recursive
