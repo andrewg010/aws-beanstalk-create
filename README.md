@@ -2,6 +2,9 @@
 
 I've divided the docs up into the two parts of the challenge.
 
+You'll need access to the AWS console with permissions to create new IAM roles.
+With the script, you'll need programmatic access credentials and be able to create elastic beanstalk environments as well as make changes to S3.
+
 First up you'll need to run an `npm install`
 
 ## Part 1 - Elastic Beanstalk Environment Creation
@@ -10,7 +13,7 @@ First up you'll need to run an `npm install`
 
 You should make sure that the following IAM roles exist:
 
-aws-elasticbeanstalk-ec2-role
+aws-elasticbeanstalk-ec2-role<br>
 aws-elasticbeanstalk-service-role
 
 These roles are usually created by Elastic Beanstalk when the first environment is created.<br>
